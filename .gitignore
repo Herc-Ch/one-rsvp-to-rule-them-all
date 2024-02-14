@@ -1,5 +1,4 @@
 # ignore the valid emails txt as it contains sensitive information
-valid_emails.txt
 test_env2/
 # Byte-compiled / optimized / DLL files
 __pycache__/
