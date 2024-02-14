@@ -1,0 +1,293 @@
+.details-container {
+    /* background-color: rgba(174, 133, 46, 0.2); */
+    background-color: #ae852e1a;
+    padding: 0;
+    color: #82662A;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Middle Earth';
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .details-container,
+.wrapper .svg1,
+.wrapper .svg3 {
+    margin-right: -6px;
+}
+
+.px-4 {
+    margin-bottom: 140px;
+}
+
+.details-container p {
+    margin-bottom: 5px;
+    /* Adjust the value to control the spacing */
+}
+
+.invitation-container {
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    /* Adjust padding as needed */
+    display: inline-block;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+    /* Adjust the spacing between list items */
+}
+
+
+
+@font-face {
+    font-family: 'Hobbiton Brushhand';
+    src: url('HobbitonBrushhandhobbitonBrush-WygA.ttf') format('truetype');
+    /* adjust the path accordingly */
+    /* Add more src lines for other font file formats if you have them (e.g., .woff, .woff2) */
+}
+
+@font-face {
+    font-family: "Middle Earth";
+    src: url("Middleearth-ao6m.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Elven";
+    src: url("Elvencommonspeak-0WXz.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Black speech";
+    src: url("TengwarAnnatarItalic-2Oov.ttf") format("truetype");
+}
+
+.features-container {
+    display: flex;
+    font-size: 50px;
+    /* Set your desired font size */
+    margin-top: 10px;
+    /* Adjust the margin-top to align with the SVG */
+    text-align: center;
+    font-family: 'Middle Earth';
+    color: #82662A;
+}
+
+.small-text-above-gif,
+.gif-container {
+    text-align: center;
+    margin-bottom: 10px;
+    /* Optional: Add some spacing between the text and the GIF */
+    margin-top: 10px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: 'Middle Earth';
+    color: #82662A;
+}
+
+.feature {
+    font-family: "Hobbiton Brushhand";
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+    color: #82662A;
+}
+
+.dot {
+    margin-top: 1px;
+    /* Adjust the value to control the distance between the text and the dot */
+}
+
+.dot-text {
+    font-size: 22px;
+    /* Adjust the size as needed */
+    color: #82662A;
+    /* Adjust the color as needed */
+}
+
+/* Styling for the dot */
+.dot::before {
+    content: "•";
+    color: gray;
+    /* Adjust the color as needed */
+    font-size: 24px;
+    /* Adjust the size as needed */
+}
+
+
+.feature a {
+    text-decoration: underline;
+    /* Add underline */
+    color: #82662A;
+    /* Set the color to red */
+}
+
+.centered-paragraph {
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Hobbiton Brushhand";
+    font-size: 74px;
+    color: #82662A;
+}
+
+.centered-paragraph-there {
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Hobbiton Brushhand";
+    font-size: 64px;
+    color: #82662A;
+}
+
+
+.another-paragraph {
+    text-align: center;
+    font-family: "Middle Earth";
+    font-size: 16px;
+    color: #82662A;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust the margin-top of .rounded-text for vertical spacing */
+.text-center .rounded-text {
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+.rounded-text {
+    width: 25.625rem;
+    height: 25.625rem;
+    text-transform: uppercase;
+    font-family: "Black speech";
+    margin-bottom: -230px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.coloring {
+    fill: black;
+    /* Initial color, change as needed */
+    transition: fill 3s ease;
+    /* Adjust the duration and easing function as needed */
+}
+
+.red-text {
+    fill: #ffbf43;
+    /* Change this to your desired red color */
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.rotating {
+    animation: rotating 72s linear infinite;
+}
+
+.rounded-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitation-container img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-lg {
+    font-family: "Middle Earth" !important;
+}
+
+/*
+button {
+    background-color: #82662A;  // Green background color
+    color: white;  // White text color
+    padding: 3px 10px;  // Padding for better appearance
+    border: none;  // Remove border
+    border-radius: 5px;  // Optional: Add rounded corners
+    cursor: pointer;  // Cursor style on hover
+}
+*/
+
+.attendants-sections-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 80%;
+}
+
+.attendants-section {
+    width: 88%;
+    /* Adjust as needed */
+    margin: 0;
+}
+
+.attedance-container {
+    /* background-color: rgba(174, 133, 46, 0.2); */
+    background-color: rgba(174, 133, 46, 0);
+    padding: 15px;
+    color: #82662A;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Middle Earth';
+    margin-top: 35px;
+}
+
+.centered-paragraph-there2 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Elven";
+    font-size: 64px;
+    color: #82662A;
+}
+
+#playButton {
+    background-color: gray;
+    /* Blue color as an example */
+    color: #fff;
+    /* White text color */
+    padding: 10px 20px;
+    /* Adjust padding for better appearance */
+    border: none;
+    /* Remove default button border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    cursor: pointer;
+    /* Add pointer cursor on hover */
+}
+
+/* Hover effect */
+#playButton:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+}
+
+/* Active (clicked) effect */
+#playButton:active {
+    background-color: #1f618d;
+    /* Even darker blue when clicked */
+}
