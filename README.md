@@ -43,7 +43,7 @@ Clone the repository:
 
 ```bash
 
-git clone https://github.com/Herc-Ch/wedding.git
+git clone https://github.com/Herc-Ch/one-rsvp-to-rule-them-all.git
 
 ```
 
@@ -51,7 +51,7 @@ and
 
 ```bash
 
-cd wedding
+cd one-rsvp-to-rule-them-all
 
 ```
 
@@ -233,7 +233,9 @@ To ensure the security and integrity of the RSVP system, it is crucial to mainta
    guest1@example.com
    guest2@example.com
    ```
+
    Add your own email here, to be able to play around with the attend/not_attend features.
+
 2. **Avoid Blank Lines:** Do not include any blank lines in the file.
 
 3. **Prevent Spam and Bot Attacks:** Adding valid emails helps prevent spam submissions and potential bot attacks. Only guests with emails listed in this file will be able to use the RSVP functionality.
