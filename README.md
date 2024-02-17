@@ -32,8 +32,8 @@ May your wedding be a journey filled with joy, love, and the magic that only Tol
    1. [Interaction](#interaction)
    1. [Emails](#important-note)
 1. [Deployment](#deploy)
-<!-- /MarkdownTOC -->
-</details>
+   <!-- /MarkdownTOC -->
+   </details>
 
 <a id="installation"></a>
 
@@ -113,7 +113,7 @@ Create a `.env` file in the project's root directory with the following configur
 
 ```env
 # Flask App Secret Key
-FLASK_SECRET_KEY=your_own_secret_key (it can be whatever u wish it to be, but strong keys are encouraged)
+FLASK_KEY=your_own_secret_key (it can be whatever u wish it to be, but strong keys are encouraged)
 e.g. FLASK_SECRET_KEY = "12hsH6d98h7s8r7ghw9eg98w3"
 
 # Host Email and App Password (Create an App Password in Google for security)
@@ -160,13 +160,13 @@ How to Set Up Google App Password:
 
 - Enter the provided username and password to log in as the host.
 
-   ![login_gif](https://github.com/Herc-Ch/wedding/assets/134635471/b9635e05-8960-4c9f-9cbb-c73707dc62fe)
+  ![login_gif](https://github.com/Herc-Ch/wedding/assets/134635471/b9635e05-8960-4c9f-9cbb-c73707dc62fe)
 
 ### Logout 🚪
 
 - Hosts can log out by navigating to `/logout`.
 
-   ![logout_gif](https://github.com/Herc-Ch/wedding/assets/134635471/9d1e2b8f-b793-4111-b6a4-22766206d102)
+  ![logout_gif](https://github.com/Herc-Ch/wedding/assets/134635471/9d1e2b8f-b793-4111-b6a4-22766206d102)
 
   Upon logging out, the web app reverts to the guest view, rendering it incapable of editing any information or images.
 
@@ -176,8 +176,7 @@ How to Set Up Google App Password:
 
 - Guests can decline the invitation by using the form on `/not_attend`.
 
-   ![attend_gif](https://github.com/Herc-Ch/wedding/assets/134635471/99b4c9be-8404-47eb-a600-36b0bd75ca9a)
-
+  ![attend_gif](https://github.com/Herc-Ch/wedding/assets/134635471/99b4c9be-8404-47eb-a600-36b0bd75ca9a)
 
 ### Customization
 
@@ -189,8 +188,7 @@ How to Set Up Google App Password:
 
   In case you want the bride's name to be first, just reassign the phone numbers of the .env file to the opposite initial assignment (in the position of the groom's number put the bride's and vice versa).
 
-   ![custom_gif](https://github.com/Herc-Ch/wedding/assets/134635471/211e954e-88f6-411a-ab8c-47b27a5d5717)
-
+  ![custom_gif](https://github.com/Herc-Ch/wedding/assets/134635471/211e954e-88f6-411a-ab8c-47b27a5d5717)
 
 <a id="uploads"></a>
 
@@ -247,6 +245,7 @@ Remember, any email not found in this list during RSVP submission will result in
 Thank you for maintaining the integrity of your RSVP system!
 
 <a id="deploy"></a>
+
 ## 5. Deployment
 
 ## 1. Update Debug Mode
@@ -256,15 +255,20 @@ Before deploying your web app, ensure that the Flask app's debug mode is set to 
 ```python
 app.run(debug=True)
 ```
+
 Change it to:
+
 ```python
 app.run(debug=False)
 ```
 
 ## 2. Procfile
+
 A Procfile is included to specify the commands that are executed by the app on startup. Ensure that it is configured correctly for your application.
 Feel free to explore and modify the code to suit your specific requirements. If you encounter any issues or have suggestions for improvements, please refer to the GitHub repository or contact the project contributors.
+
 ## 3. Deploying
+
 Follow the deployment instructions for your chosen platform (e.g., Heroku, AWS, onrender etc.). Make sure to check the platform-specific documentation for any additional configuration or requirements.
 
 Happy wedding planning! 🎉
