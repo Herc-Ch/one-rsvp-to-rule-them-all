@@ -109,7 +109,7 @@ All required dependencies are listed in the `requirements.txt` file. Ensure that
 
 ### .env File Setup 🔐
 
-Create a `.env` file in the project's root directory with the following configurations:
+Modify the `.env` file in the project's root directory with the following configurations:
 
 ```env
 # Flask App Secret Key
@@ -121,8 +121,8 @@ MY_EMAIL=your_email
 PASSWORD=your_app_password
 
 # Host Credentials
-HOST_USERNAME=groom
-HOST_PASSWORD=wedding2024
+HOST_USERNAME=groom_pass
+HOST_PASSWORD=wedding_time
 
 # Means of communication with the bride and groom
 GROOM_PHONE= grooms_telephone_number or any other means of communication
