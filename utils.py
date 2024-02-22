@@ -166,7 +166,7 @@ def handle_response(form, template):
             # Clear the session data
             session.pop("response_form_data", None)
             flash("Your information has been successfully submitted.", "success")
-            return redirect(url_for("home"))
+            return redirect(url_for("main.home"))
         elif email not in email_list:
             flash(
                 f"Your email was not found in the registered list. Please contact the host at {Config.my_email} and ask to be registered.",
