@@ -1,7 +1,10 @@
+/* Other media queries for tablets, larger screens, etc. can be added here */
+
 .details-container {
     /* background-color: rgba(174, 133, 46, 0.2); */
     background-color: #ae852e1a;
     padding: 0;
+
     color: #82662A;
     font-size: 26px;
     text-align: center;
@@ -12,10 +15,29 @@
     align-items: center;
 }
 
+
 .wrapper .details-container,
 .wrapper .svg1,
 .wrapper .svg3 {
     margin-right: -6px;
+}
+
+/* Reset margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure HTML and body fill the entire viewport */
+html,
+body {
+    height: 100%;
+}
+
+/* Set background color for the body */
+body {
+    background-color: #ffffff;
+    /* Replace with your desired background color */
 }
 
 .px-4 {
@@ -244,6 +266,34 @@ button {
     /* Adjust as needed */
     margin: 0;
 }
+
+/* Adjust layout for mobile devices */
+@media (max-width: 767px) {
+    .attendants-sections-container {
+        flex-direction: column;
+        align-items: center;
+        /* Optional: Center the columns */
+    }
+
+    .attendants-section {
+        width: 100%;
+        margin-top: 20px;
+        /* Add spacing between the sections */
+    }
+
+    .attendants-section ul {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.iban-container {
+    width: 100%;
+    /* Ensure it takes up the full width */
+    text-align: center;
+    /* Center the IBAN text */
+}
+
 
 .attedance-container {
     /* background-color: rgba(174, 133, 46, 0.2); */
